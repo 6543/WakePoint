@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package gstavrinos.destinationalarm
+package wakepoint
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

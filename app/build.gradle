@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "gstavrinos.destinationalarm"
+        applicationId "de.obermui.6543.wakepoint"
         minSdkVersion 24
         targetSdkVersion 28
         versionCode 1

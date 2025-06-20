@@ -5,7 +5,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-package gstavrinos.destinationalarm
+package wakepoint
 
 import android.location.Address
 import android.os.AsyncTask
