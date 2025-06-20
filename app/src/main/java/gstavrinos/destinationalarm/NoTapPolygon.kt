@@ -1,3 +1,10 @@
+/*
+ * Copyright (C) 2018 George Stavrinos (Unlicense)
+ * Copyright (C) 2025-present 6543 (GPL-3.0-or-later)
+ *
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 package gstavrinos.destinationalarm
 
 import android.view.MotionEvent
