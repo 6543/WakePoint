@@ -70,10 +70,10 @@ class MainActivity : AppCompatActivity(){
                 }
         notif = NotificationCompat.Builder(this, createNotificationChannel())
                 .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle("Destination Alarm")
+                .setContentTitle("WakePoint")
                 .setContentText("Don't worry, the alarm is still active in the background!")
                 .setContentIntent(pendingIntent)
-                .setTicker("Destination Alarm")
+                .setTicker("WakePoint")
                 .build()
         notif!!.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
 
@@ -92,15 +92,6 @@ class MainActivity : AppCompatActivity(){
         this.volumeControlStream = AudioManager.STREAM_ALARM
 
         minDist = settings!!.getInt("minDist", 1000)
-
-
-//        audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
-//        audioManager!!.mode = AudioManager.MODE_NORMAL
-//        Log.e("asdasdasdasdasdddddddddddddd", audioManager!!.isBluetoothScoOn.toString())
-//        audioManager!!.isBluetoothScoOn = false
-//        audioManager!!.isSpeakerphoneOn = true
-//
-//        audioManager!!.isSpeakerphoneOn = settings!!.getBoolean("useSpeaker", true)
 
         vib = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
 
@@ -648,7 +639,7 @@ class MainActivity : AppCompatActivity(){
         var channelId = "old"
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             channelId = "destination_alarm_service"
-            val channelName = "Destination Alarm Service"
+            val channelName = "WakePoint Service"
             val chan = NotificationChannel(channelId,
                     channelName, NotificationManager.IMPORTANCE_NONE)
             chan.lightColor = Color.BLUE
